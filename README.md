@@ -1,0 +1,2 @@
+# Trigma
+Display Json Data
