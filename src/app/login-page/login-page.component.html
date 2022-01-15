@@ -1,0 +1,14 @@
+
+<mat-card>
+  <p>Please login</p>
+  <mat-form-field>
+    <input matInput name="username" #name>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput name="password" type="password" #userpassword>
+  </mat-form-field>
+  <br/>
+  <button mat-raised-button color="primary" (click)="loginClicked(name,userpassword)">Login</button>
+</mat-card>
+

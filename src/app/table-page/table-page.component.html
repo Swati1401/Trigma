@@ -1,0 +1,44 @@
+
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Details Are Submitted SuccessFully</mat-card-title>
+    </mat-card-header>
+</mat-card>
+
+
+<p><a (click)="DisplayData()">ClikMe</a> </p>
+<div class="container" *ngIf="DisplayDataFlag==true"  >  
+    
+    <h1> Display Data from Strategy File </h1> 
+
+      
+    <table class="table table-striped">  
+      <thead>  
+          <tr>  
+            <th>strategies</th>  
+            <th>period</th>  
+            <th>price</th>  
+            <th>geographies</th>  
+            <th>fundSizes</th>  
+            <th>ratings</th>  
+            <th>vintage</th>  
+            <th>timePeriod</th> 
+          </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let student of data.data">  
+          <td>{{ student.strategies }}</td>  
+          <td>{{ student.period }}</td>  
+          <td>{{ student.price }}</td>  
+          <td>{{ student.geographies }}</td> 
+          <td>{{ student.strategies }}</td>  
+          <td>{{ student.fundSizes }}</td>  
+          <td>{{ student.ratings }}</td>  
+          <td>{{ student.vintage }}</td>  
+          <td>{{ student.timePeriod }}</td>  
+        </tr>  
+      </tbody>  
+    </table>  
+  </div>  
+
