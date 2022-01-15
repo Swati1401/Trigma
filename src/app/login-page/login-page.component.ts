@@ -38,7 +38,9 @@ export class LoginPageComponent implements OnInit {
     // }, 3000);  
     }
     else{
-      alert("Please Fill Correct Details")
+      // alert("Please Fill Correct Details")
+      this.toastr.error("Invalid Username Or Password",'',{closeButton: true,timeOut: 2000,positionClass: 'toast-top-full-width'});
+      return ;
       window.location.reload();
     
      
